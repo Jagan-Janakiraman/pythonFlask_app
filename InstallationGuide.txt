@@ -1,0 +1,18 @@
+1) Create an environment
+Create a project folder and a .venv folder within:
+    py -3 -m venv .venv
+
+2) Activate the environment:
+Before you work on your project, activate the corresponding environment:
+    .venv\Scripts\activate
+    #if u get UnauthorizedAccess or SecurityError , use given command:
+    Set-ExecutionPolicy Unrestricted -Scope Process
+
+3) Install Flask
+Within the activated environment, use the following command to install Flask:
+    pip install Flask
+
+To run the app use in terminal:
+    flask run
+    To enable debug mode, use the --debug option:
+    flask --app app run --debug
